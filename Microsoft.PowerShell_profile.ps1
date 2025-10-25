@@ -2,10 +2,15 @@
 
 Set-PSReadLineKeyHandler -Chord Ctrl+Spacebar -Function AcceptSuggestion
 
+# Aliases
+
+function pj { pnpx.exe --silent projen @args }
+
 # Completion
 
-gh completion --shell powershell | Out-String | Invoke-Expression # GitHub CLI
-Import-Module posh-git # Git
+Import-Module posh-git
+gh completion --shell powershell | Out-String | Invoke-Expression
+pnpm completion pwsh | Out-String | Invoke-Expression
 
 # Functions
 
