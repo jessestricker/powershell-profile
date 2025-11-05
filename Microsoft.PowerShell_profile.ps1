@@ -4,7 +4,7 @@ Set-PSReadLineKeyHandler -Chord Ctrl+Spacebar -Function AcceptSuggestion
 
 # Aliases
 
-function pj { pnpx.exe --silent projen @args }
+function pj { pnpx.exe projen @args }
 
 # Completion
 
