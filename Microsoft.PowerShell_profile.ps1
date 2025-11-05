@@ -25,7 +25,9 @@ function New-Password {
     [OutputType([string])]
     param (
         [PSDefaultValue()]
-        [uint] $Entropy = 256,
+        [ValidateRange("Positive")]
+        [int] $Entropy = 256,
+
         [switch] $WithSymbols
     )
 
