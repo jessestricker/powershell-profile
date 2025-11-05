@@ -5,6 +5,7 @@ Set-PSReadLineKeyHandler -Chord Ctrl+Spacebar -Function AcceptSuggestion
 # Aliases
 
 function pj { pnpx.exe projen @args }
+function Update-NpmPackages { pnpx.exe npm-check-updates @args }
 
 # Completion
 
